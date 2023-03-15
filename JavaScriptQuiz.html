@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+</head>
+<style>
+table{
+    width: 100%;
+}
+th{
+    padding: 1%;
+    font-size: 200%;
+}
+td{
+    padding: 2%;
+    font-size: 120%;
+    background-color: #ff990018;
+    width: fit-content;
+    
+}
+button{
+background-image: linear-gradient(rgba(255, 153, 0, 0.616),rgba(255, 155, 5, 0.801)); width: 15%; 
+padding-top: 1%; 
+padding-bottom: 1%;  
+font-weight: 600; color: white; 
+border-radius: 10px; border: none; 
+font-size: 120%;
+letter-spacing: 2px;
+}
+button:hover{
+    background-image: linear-gradient(rgba(255, 155, 5, 0.801),rgba(255, 153, 0, 0.616));
+    
+}
+</style>
+<body>
+    <center>
+    <form action="" >
+        <table >
+            <tr>
+                <th style="background-color: rgb(255, 153, 0); color: white; font-weight: 800; text-align: center;"> 
+                    <p  onclick="history.back()" style="text-align: left; width: fit-content; position: absolute; z-index: 1;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                  </svg></p> <p style="position: relative;">JavaScript Quiz</p></th>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Question 1  </h3>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="radio" id="option" name="option">&nbsp;&nbsp;option1 
+
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <input type="radio" id="option" name="option">&nbsp;&nbsp;option2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="option" name="option">&nbsp;&nbsp;option3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="option" name="option">&nbsp;&nbsp;option4
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Next</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</center>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
