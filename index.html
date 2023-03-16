@@ -66,8 +66,23 @@
     }
 </style>
 <body>
+    <script>
+        $(document).ready(function () {
+    $(".selectLang").hide();
+
+    $(".Quiz").click(function () {
+        $(".selectLang").show(2500);
+        // $(".selectLang").css({"margin-top":"-10%"});
+        $(".Quiz").hide();
+
+        // $(".Quiz").css("marin-top","-10%");
+
+    });
+});
+
+    </script>
     <center>
-    <div class="container">
+    <div class="">
 
         <div class="Quiz">
             <button>Let's Start Quiz</button>
@@ -77,7 +92,7 @@
             What's Your Fav Language.
         </div>
         <div class="html">
-            <a href="HTMLQuiz.html"><button>  HTML </button></a>
+            <a href="HTMLQuiz.html  "><button>  HTML </button></a>
         </div>
         <div class="css">
             <a href="CSSQuiz.html"> <button>  CSS </button></a>
