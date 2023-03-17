@@ -64,6 +64,9 @@
         text-decoration: none;
         color: black;
     }
+    button{
+        cursor: pointer;
+    }
 </style>
 <body>
     <script>
@@ -71,12 +74,12 @@
     $(".selectLang").hide();
 
     $(".Quiz").click(function () {
-        $(".selectLang").show(2500);
+        $(".selectLang").slideDown(2500);
         // $(".selectLang").css({"margin-top":"-10%"});
         $(".Quiz").hide();
 
         // $(".Quiz").css("marin-top","-10%");
-
+        selectLangs();
     });
 });
 
@@ -91,7 +94,7 @@
         <div class="lang">
             What's Your Fav Language.
         </div>
-        <div class="html">
+        <div class="html" >
             <a href="HTMLQuiz.html  "><button>  HTML </button></a>
         </div>
         <div class="css">
