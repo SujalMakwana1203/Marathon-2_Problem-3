@@ -30,7 +30,7 @@
         list-style: none;
         font-size: 120%;
         background-color: #0084ff2a;
-        color: white;
+        color: blue;
         margin: 0;
     }
     li {
@@ -38,9 +38,9 @@
         font-size: 130%;
     }
 
-    button {
+    #submit{
         background-color: blue;
-        border: 1px solid blue;
+        border: 2px solid white;
         box-shadow: 2px 2px 10px rgb(0, 132, 255);
         cursor: pointer;
         /* background-image: linear-gradient(rgba(0, 0, 255, 0.616), rgba(5, 122, 255, 0.801)); */
@@ -50,7 +50,7 @@
         font-weight: 600;
         color: white;
         border-radius: 10px;
-        border: none;
+        
         font-size: 120%;
         letter-spacing: 2px;
     }
@@ -58,6 +58,17 @@
 </style>
 
 <body>
+    <script>
+        function selectLangs(){
+        $(document).ready(function(){
+            $("#home").click(function(){
+                $(".selectLang").hide();
+                $(".Quiz").show();
+
+            });
+        });
+    }
+    </script>
     <div style="position: absolute; z-index: 1; float: right; right: 0;margin:2%"><svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-filetype-html" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
       </svg></div>
@@ -82,9 +93,10 @@
                     <label for="d" id="d_text">Answer...</label>
                 </li>
                 <button id="submit">Next</button>
-                <svg onclick="history.back()" style="float: right; cursor:pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="blue" class="bi bi-house" viewBox="0 0 16 16">
+                <button title="Go To Home"  style=" background-color:blue; border: 2px solid blue; padding:0.5%; box-shadow: 1px 1px 10px blue; border-radius:10px; float: right; cursor:pointer;" >
+                <svg onclick="history.back()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" id="home" class="bi bi-house" viewBox="0 0 16 16">
                     <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-                  </svg>
+                  </svg></button>
             </ul>
             
         </div>
