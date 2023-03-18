@@ -123,8 +123,17 @@ submitButton.addEventListener("click", () => {
             quiz.innerHTML = `
             
 <h2 style = " color : white; ">You answered ${score}/${quizData.length} questions correctly</h2>
-<button onclick="history.go(0)" style = "border-radius: 5px;cursor:pointer;margin-top : 5%;background-color:#fff;color:black;    box-shadow: 1px 1px 15px black;
-;height: 50px;width: 250px;font-size: 25px;border: none;">Play Again</button>
+<button onclick="history.go(0)" style = "
+border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+    background-color: #fff;
+    color: red;
+    box-shadow: 2px 2px 2px red;
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+    border: 2px solid red;">Play Again</button>
 ` // location.reload() won't work in CodePen for security reasons;
         }
     }
